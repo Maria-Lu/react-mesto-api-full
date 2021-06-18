@@ -1,0 +1,24 @@
+.header__info-burger {
+  display: none;
+  background: url(../../../images/header/burger-icon.svg) no-repeat center;
+  width: 30px;
+  height: 30px;
+  transition: all .5s ease-in;
+}
+
+.header__info-burger:hover {
+  cursor: pointer;
+  opacity: .6;
+}
+
+@media screen and (max-width: 620px) {
+  .header__info-burger {
+    display: block;
+}
+}
+
+@media screen and (max-width: 425px) {
+  .header__info-burger {
+    margin: 0 27px 0 0;
+}
+}

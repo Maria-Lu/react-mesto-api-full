@@ -1,0 +1,29 @@
+.profile__info {
+  color: #fff;
+  max-width: calc(100% - 330px);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(2, min-content);
+  gap: 10px 18px;
+  align-items: end;
+}
+
+@media screen and (max-width: 768px) {
+  .profile__info {
+    gap: 9px 10px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .profile__info {
+    max-width: calc(100% - 150px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .profile__info {
+    max-width: 100%;
+    justify-content: center;
+    margin: 26px 0 32px;
+  }
+}

@@ -1,0 +1,10 @@
+.button {
+  box-sizing: border-box;
+  padding: 0;
+  outline: none;
+  transition: opacity .3s ease-in;
+}
+
+.button:hover {
+  cursor: pointer;
+}

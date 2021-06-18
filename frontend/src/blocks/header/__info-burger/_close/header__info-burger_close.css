@@ -1,0 +1,4 @@
+.header__info-burger_close {
+  background: url(../../../../images/header/close-icon.svg) no-repeat center;
+  transform: rotate(90deg);
+}

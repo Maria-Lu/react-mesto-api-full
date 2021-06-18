@@ -1,0 +1,12 @@
+.element__button-like {
+  width: 21px;
+  height: 19px;
+  background: url(../../../images/element/button-like.svg) #fff no-repeat center/contain;
+  border: none;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.element__button-like:hover {
+  opacity: .5;
+}

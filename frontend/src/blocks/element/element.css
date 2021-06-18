@@ -1,0 +1,9 @@
+.element {
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: repeat(2, min-content);
+  gap: 26px;
+}

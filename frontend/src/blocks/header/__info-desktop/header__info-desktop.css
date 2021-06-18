@@ -1,0 +1,11 @@
+.header__info-desktop {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 620px) {
+  .header__info-desktop {
+    display: none;
+  }
+}
