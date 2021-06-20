@@ -47,12 +47,6 @@ app.use(requestLogger);
 
 app.use(limiter);
 
-app.get('/crash-test', () => {
-  setTimeout(() => {
-    throw new Error('Сервер сейчас упадёт');
-  }, 0);
-});
-
 app.post('/signin', validateSignIn, login);
 app.post('/signup', validateSignUp, createUser);
 app.get('/signout', signOut);
