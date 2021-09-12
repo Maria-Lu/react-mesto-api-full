@@ -5,10 +5,6 @@ class AuthApi {
     this._credentials = credentials;
   }
 
-  getLoginData() {
-    return this._sendRequest('/users/me', 'GET', null);
-  }
-
   signUpUser(userData) {
     return this._sendRequest('/signup', 'POST', userData);
   }
@@ -46,7 +42,7 @@ class AuthApi {
 }
 
 const authApi = new AuthApi({
-  baseUrl: 'https://api.mesto.russia.nomoredomains.club',
+  baseUrl: 'http://localhost:3000',
   credentials: 'include',
   headers: {
     'Content-Type': 'application/json',

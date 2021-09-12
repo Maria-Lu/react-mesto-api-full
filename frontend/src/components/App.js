@@ -82,28 +82,6 @@ function App() {
     setIsInfoTooltipOpen(false);
   }
 
-  useEffect(() => {
-    function tokenCheck() {
-      const jwt = localStorage.getItem('jwt');
-      if (jwt) {
-        authApi
-          .getLoginData(jwt)
-          .then((res) => {
-            if (res.email) {
-              setEmail(res.email);
-              setLoggedIn(true);
-              history.push('/');
-            }
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      }
-    }
-
-    tokenCheck();
-  }, [history]);
-
   function handleSignInSubmit(userData) {
     authApi
       .signInUser(userData)
@@ -119,6 +97,18 @@ function App() {
         console.log(err);
       });
   }
+
+   useEffect(() => {
+    function checkToken() {
+      const jwt = localStorage.getItem('jwt');
+      if (jwt) {
+        setLoggedIn(true);
+        history.push('/');
+      }
+    }
+
+    checkToken();
+  }, [history]);
 
   function handleSignUpSubmit(userData) {
     authApi

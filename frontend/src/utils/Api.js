@@ -62,7 +62,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'https://api.mesto.russia.nomoredomains.club',
+  baseUrl: 'http://localhost:3000',
   credentials: 'include',
   headers: {
     'Content-Type': 'application/json',
